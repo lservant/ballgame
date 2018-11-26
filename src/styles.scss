@@ -1,0 +1,18 @@
+.block-container{
+    border: 1px solid black;  
+    text-align: center;  
+    padding: 3vw;
+}
+.block{
+    display: inline-block;
+    width: 8vw;
+    height: 8vw;
+    margin: 0.5vw;
+
+    .block-container .row &:first-child{
+        margin-left: 1vw;
+    }
+    .block-container .row &:last-child {
+        margin-right: 1vw;
+    }
+}
