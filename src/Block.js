@@ -18,7 +18,6 @@ export function Block(health) {
             self.Health--;
             $(this).css('background-color', self.Color()).text(self.Health > 0 ? self.Health : '');
         }
-        buildRow();
     };
 }
 

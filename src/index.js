@@ -23,7 +23,10 @@ function buildRow() {
         }
         $r.append(block.toString()).find('.block:last')
             .css('background-color', block.Color())
-            .on('click.ballgame', block.getHit);
+            .on('click.ballgame', function () {
+                block.getHit();
+                buildRow();
+            });
     }
 }
 
